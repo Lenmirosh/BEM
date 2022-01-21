@@ -23,50 +23,63 @@
   </head>
   <body>
     <div class="backdrop-thumb">
-      <header class="header studio">
+      <header class="header header--no-border">
         <!-- Навигация -->
         <div class="container header-container">
           <nav class="header-nav">
-            <a href="./index.html" class="link header-logo">
-              <span class="header-logo-design">Web</span>Studio</a
+            <a href="./index.html" class="link logo">
+              <span class="logo__design">Web</span>Studio</a
             >
             <!-- <div class="header-nav"> -->
 
-            <ul class="header-site-nav list">
-              <li class="item">
+            <ul class="site-nav list">
+              <li class="site-nav__item">
                 <a
                   href="../goit-markup-hw-06/index.html"
-                  class="link header-current animation-color"
+                  class="link header-container__header-nav site-nav__link--title-color site-nav__link site-nav__link--current animation-color"
                 >
                   Студия
                 </a>
               </li>
-              <li class="item">
+              <li class="site-nav__item">
                 <a
                   href="../goit-markup-hw-06/portfolio.html"
-                  class="link animation-color"
+                  class="link header-container__header-nav site-nav__link--title-color site-nav__link animation-color"
                 >
                   Портфолио
                 </a>
               </li>
-              <li class="item">
-                <a href=" " class="link animation-color"> Контакты </a>
+              <li class="site-nav__item">
+                <a
+                  href=" "
+                  class="link header-container__header-nav site-nav__link--title-color site-nav__link animation-color"
+                >
+                  Контакты
+                </a>
               </li>
             </ul>
           </nav>
-          <!-- Контакты -->
-          <ul class="header-site-auth list">
-            <li class="item">
-              <a href="mailto:info@devstudio.com" class="link animation-color">
-                <svg class="header-site-auth-icon" width="16" height="12">
+
+          <!-- site-auth -->
+
+          <ul class="site-auth list">
+            <li class="list site-auth__item">
+              <a
+                href="mailto:info@devstudio.com"
+                class="link header-container__header-nav site-auth__link animation-color"
+              >
+                <svg class="site-auth__icon" width="16" height="12">
                   <use href="./img/symbol-defs2.svg#icon-envelope-hover"></use>
                 </svg>
                 info@devstudio.com
               </a>
             </li>
-            <li class="list">
-              <a href="tel:+380961111111" class="link animation-color">
-                <svg class="header-site-auth-icon" width="10" height="16">
+            <li class="list site-auth__item">
+              <a
+                href="tel:+380961111111"
+                class="link header-container__header-nav site-auth__link animation-color"
+              >
+                <svg class="site-auth__icon" width="10" height="16">
                   <use href="./img/symbol-defs2.svg#icon-smartphone"></use>
                 </svg>
                 +38 096 111 11 11
@@ -79,12 +92,12 @@
         <!-- Герой -->
 
         <section class="hero-container overlay">
-          <div class="hero-container-main container">
-            <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <div class="hero container">
+            <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
             <button
               data-modal-open
               type="button"
-              class="hero-primary-button animation-baсkground-color"
+              class="primary-button animation-baсkground-color"
             >
               Заказать услугу
             </button>
@@ -96,34 +109,34 @@
         <section class="section advantage">
           <div class="advantage-main container">
             <h2
-              class="section-title advantage-visually-hidden advantage-main-title"
+              class="section__title advantage--visually-hidden advantage-main-title"
             >
               Преимущества
             </h2>
-            <ul class="list">
-              <li class="item">
-                <h3 class="advantage-title">Внимание к деталям</h3>
+            <ul class="advantage-main__list list">
+              <li class="advantage-main__item">
+                <h3 class="advantage__title">Внимание к деталям</h3>
                 <p>
                   Идейные соображения, а также начало повседневной работы по
                   формированию позиции.
                 </p>
               </li>
-              <li class="item">
-                <h3 class="advantage-title">Пунктуальность</h3>
+              <li class="advantage-main__item">
+                <h3 class="advantage__title">Пунктуальность</h3>
                 <p>
                   Задача организации, в особенности же рамки и место обучения
                   кадров влечет за собой.
                 </p>
               </li>
-              <li class="item">
-                <h3 class="advantage-title">Планирование</h3>
+              <li class="advantage-main__item">
+                <h3 class="advantage__title">Планирование</h3>
                 <p>
                   Равным образом консультация с широким активом в значительной
                   степени обуславливает.
                 </p>
               </li>
-              <li class="item">
-                <h3 class="advantage-title">Современные технологии</h3>
+              <li class="advantage-main__item">
+                <h3 class="advantage__title">Современные технологии</h3>
                 <p>
                   Значимость этих проблем настолько очевидна, что реализация
                   плановых заданий.
@@ -137,38 +150,38 @@
 
         <section class="section directions">
           <div class="directions-main container">
-            <h2 class="section-title">Чем мы занимаемся</h2>
-            <ul class="list">
-              <li class="item">
+            <h2 class="section__title">Чем мы занимаемся</h2>
+            <ul class="list directions-main__list">
+              <li class="thumb__item">
                 <img
-                  class="directions-photo"
+                  class="thumb__photo"
                   src="./img/1.jpg"
                   alt="a man is developing a website"
                   width="370"
                 />
-                <div class="directions-description animation-opacity">
+                <div class="thumb__description animation-opacity">
                   <p>Десктопные приложения</p>
                 </div>
               </li>
-              <li class="item">
+              <li class="thumb__item">
                 <img
-                  class="directions-photo"
+                  class="thumb__photo"
                   src="./img/2.jpg"
                   alt="woman works as a marketer"
                   width="370"
                 />
-                <div class="directions-description animation-opacity">
+                <div class="thumb__description animation-opacity">
                   <p>Мобильные приложения</p>
                 </div>
               </li>
-              <li class="item">
+              <li class="thumb__item">
                 <img
-                  class="directions-photo"
+                  class="thumb__photo"
                   src="./img/3.jpg"
                   alt="woman over website design"
                   width="370"
                 />
-                <div class="directions-description animation-opacity">
+                <div class="thumb__description animation-opacity">
                   <p>Дизайнерские решения</p>
                 </div>
               </li>
@@ -180,28 +193,28 @@
 
         <section class="section our-team">
           <div class="our-team-main container">
-            <h2 class="section-title">Наша команда</h2>
-            <ul class="list">
-              <li class="item">
-                <div class="our-team-card-thumb">
+            <h2 class="section__title">Наша команда</h2>
+            <ul class="list our-team-main__list">
+              <li class="employee__item">
+                <div class="employee__card-thumb">
                   <img
-                    class="our-team-photo"
+                    class="employee__photo"
                     src="./img/Demyanenko.jpg"
                     alt="photo Demyanenko"
                     width="270"
                   />
                 </div>
-                <div class="our-team-description">
-                  <h4 class="our-team-employee">Игорь Демьяненко</h4>
-                  <p lang="en" class="our-team-position">Product Designer</p>
-                  <ul class="our-team-sosial-list list">
-                    <li class="our-team-sosial-item">
+                <div class="employee__description">
+                  <h4 class="employee__title">Игорь Демьяненко</h4>
+                  <p lang="en" class="employee__position">Product Designer</p>
+                  <ul class="sosial-list list">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -211,13 +224,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -225,13 +238,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -241,13 +254,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -260,26 +273,26 @@
                   </ul>
                 </div>
               </li>
-              <li class="item">
-                <div class="our-team-card-thumb">
+              <li class="employee__item">
+                <div class="employee__card-thumb">
                   <img
-                    class="our-team-photo"
+                    class="employee__photo"
                     src="./img/Repina.jpg"
                     alt="photo Repina"
                     width="270"
                   />
                 </div>
-                <div class="our-team-description">
-                  <h4 class="our-team-employee">Ольга Репина</h4>
-                  <p lang="en" class="our-team-position">Frontend Developer</p>
-                  <ul class="our-team-sosial-list list">
-                    <li class="our-team-sosial-item">
+                <div class="employee__description">
+                  <h4 class="employee__title">Ольга Репина</h4>
+                  <p lang="en" class="employee__position">Frontend Developer</p>
+                  <ul class="sosial-list list">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -289,13 +302,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -303,13 +316,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -319,13 +332,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -338,26 +351,26 @@
                   </ul>
                 </div>
               </li>
-              <li class="item">
-                <div class="our-team-card-thumb">
+              <li class="employee__item">
+                <div class="employee__card-thumb">
                   <img
-                    class="our-team-photo"
+                    class="employee__photo"
                     src="./img/Tarasov.jpg"
                     alt="photo Tarasov"
                     width="270"
                   />
                 </div>
-                <div class="our-team-description">
-                  <h4 class="our-team-employee">Николай Тарасов</h4>
-                  <p lang="en" class="our-team-position">Marketing</p>
-                  <ul class="our-team-sosial-list list">
-                    <li class="our-team-sosial-item">
+                <div class="employee__description">
+                  <h4 class="employee__title">Николай Тарасов</h4>
+                  <p lang="en" class="employee__position">Marketing</p>
+                  <ul class="sosial-list list">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -367,13 +380,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -381,13 +394,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -397,13 +410,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -416,26 +429,26 @@
                   </ul>
                 </div>
               </li>
-              <li class="item">
-                <div class="our-team-card-thumb">
+              <li class="employee__item">
+                <div class="employee__card-thumb">
                   <img
-                    class="our-team-photo"
+                    class="employee__photo"
                     src="./img/Ermakov.jpg"
                     alt="photo Ermakov"
                     width="270"
                   />
                 </div>
-                <div class="our-team-description">
-                  <h4 class="our-team-employee">Михаил Ермаков</h4>
-                  <p lang="en" class="our-team-position">UI Designer</p>
-                  <ul class="our-team-sosial-list list">
-                    <li class="our-team-sosial-item">
+                <div class="employee__description">
+                  <h4 class="employee__title">Михаил Ермаков</h4>
+                  <p lang="en" class="employee__position">UI Designer</p>
+                  <ul class="sosial-list list">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -445,13 +458,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -459,13 +472,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -475,13 +488,13 @@
                         </svg>
                       </a>
                     </li>
-                    <li class="our-team-sosial-item">
+                    <li class="sosial-list__item">
                       <a
-                        class="our-team-sosial-link animation-baсkground-color"
+                        class="sosial-list__link animation-baсkground-color"
                         href=""
                       >
                         <svg
-                          class="our-team-sosial-icon animation-fill"
+                          class="sosial-list__icon animation-fill"
                           width="20"
                           height="20"
                         >
@@ -499,14 +512,15 @@
         </section>
 
         <!-- Наши партнеры -->
-        <section class="section our-partners">
+
+        <section class="our-partners section">
           <div class="our-partners-main container">
-            <h2 class="section-title">Постоянные клиенты</h2>
-            <ul class="list our-partners-list">
-              <li class="our-partners-item">
-                <a class="our-partners-link-icon animation-border" href="">
+            <h2 class="section__title">Постоянные клиенты</h2>
+            <ul class="list our-partners-main__list">
+              <li class="our-partner">
+                <a class="our-partner__link animation-border" href="">
                   <svg
-                    class="our-partners-icon animation-fill"
+                    class="our-partner__icon animation-fill"
                     width="106"
                     height="62"
                   >
@@ -514,10 +528,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="our-partners-item">
-                <a class="our-partners-link-icon animation-border" href="">
+              <li class="our-partner">
+                <a class="our-partner__link animation-border" href="">
                   <svg
-                    class="our-partners-icon animation-fill"
+                    class="our-partner__icon animation-fill"
                     width="106"
                     height="62"
                   >
@@ -525,10 +539,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="our-partners-item">
-                <a class="our-partners-link-icon animation-border" href="">
+              <li class="our-partner">
+                <a class="our-partner__link animation-border" href="">
                   <svg
-                    class="our-partners-icon animation-fill"
+                    class="our-partner__icon animation-fill"
                     width="106"
                     height="62"
                   >
@@ -536,10 +550,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="our-partners-item">
-                <a class="our-partners-link-icon animation-border" href="">
+              <li class="our-partner">
+                <a class="our-partner__link animation-border" href="">
                   <svg
-                    class="our-partners-icon animation-fill"
+                    class="our-partner__icon animation-fill"
                     width="106"
                     height="62"
                   >
@@ -547,10 +561,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="our-partners-item">
-                <a class="our-partners-link-icon animation-border" href="">
+              <li class="our-partner">
+                <a class="our-partner__link animation-border" href="">
                   <svg
-                    class="our-partners-icon animation-fill"
+                    class="our-partner__icon animation-fill"
                     width="106"
                     height="62"
                   >
@@ -558,10 +572,10 @@
                   </svg>
                 </a>
               </li>
-              <li class="our-partners-item">
-                <a class="our-partners-link-icon animation-border" href="">
+              <li class="our-partner">
+                <a class="our-partner__link animation-border" href="">
                   <svg
-                    class="our-partners-icon animation-fill"
+                    class="our-partner__icon animation-fill"
                     width="106"
                     height="62"
                   >
@@ -577,31 +591,34 @@
       <!-- Футер -->
 
       <footer class="footer">
-        <div class="footer-main container">
+        <div class="footer-main container footer-main__container">
           <div class="addres-wrap">
-            <a href="./index.html" class="link logo footer-logo">
-              <span class="footer-logo-design">Web</span>Studio</a
+            <a href="./index.html" class="link logo logo--inverse">
+              <span class="logo__design">Web</span>Studio</a
             >
-            <address class="footer-contact">
-              <ul class="footer-item">
-                <li class="list">
+            <address class="contacts">
+              <ul class="contacts__list list">
+                <li class="contacts__item">
                   <a
                     href="https://goo.gl/maps/b69tt9Dz1oQwvLhU7"
-                    class="link contact-location animation-color"
+                    class="link contacts__link contacts__link--accent animation-color"
                   >
                     г. Киев, пр-т Леси Украинки, 26
                   </a>
                 </li>
-                <li class="list">
+                <li class="contacts__item">
                   <a
                     href="mailto:info@devstudio.com"
-                    class="animation-color link"
+                    class="animation-color contacts__link link"
                   >
                     info@example.com
                   </a>
                 </li>
-                <li class="list">
-                  <a href="tel:+380961111111" class="link animation-color">
+                <li class="contacts__item">
+                  <a
+                    href="tel:+380961111111"
+                    class="link contacts__link animation-color"
+                  >
                     +38 099 111 11 11
                   </a>
                 </li>
@@ -609,79 +626,75 @@
             </address>
           </div>
           <div class="appeal-wrap">
-            <b class="footer-appeal">присоединяйтесь</b>
-            <ul class="footer-appeal-list list">
-              <li class="footer-appeal-item">
+            <b class="appeal">присоединяйтесь</b>
+            <ul class="sosial-list list">
+              <li class="sosial-list__item appeal-wrap__sosial-list">
                 <a
-                  class="footer-appeal-link animation-baсkground-color"
+                  class="sosial-list__link sosial-list__link--dark animation-baсkground-color"
                   href=""
                   aria-label="ссылка на Instagram"
                 >
-                  <svg class="footer-sosial-icon" width="20" height="20">
+                  <svg class="sosial-list__icon" width="20" height="20">
                     <use href="./img/symbol-defs2.svg#icon-instagram"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-appeal-item">
+              <li class="sosial-list__item appeal-wrap__sosial-list">
                 <a
-                  class="footer-appeal-link animation-baсkground-color"
+                  class="sosial-list__link sosial-list__link--dark animation-baсkground-color"
                   href=""
                   aria-label="ссылка на Twitter"
                 >
-                  <svg class="footer-sosial-icon" width="20" height="20">
+                  <svg class="sosial-list__icon" width="20" height="20">
                     <use href="./img/symbol-defs2.svg#icon-twitter"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-appeal-item">
+              <li class="sosial-list__item appeal-wrap__sosial-list">
                 <a
-                  class="footer-appeal-link animation-baсkground-color"
+                  class="sosial-list__link sosial-list__link--dark animation-baсkground-color"
                   href=""
                   aria-label="ссылка на Facebok"
                 >
-                  <svg class="footer-sosial-icon" width="20" height="20">
+                  <svg class="sosial-list__icon" width="20" height="20">
                     <use href="./img/symbol-defs2.svg#icon-facebook"></use>
                   </svg>
                 </a>
               </li>
-              <li class="footer-appeal-item">
+              <li class="sosial-list__item appeal-wrap__sosial-list">
                 <a
-                  class="footer-appeal-link animation-baсkground-color"
+                  class="sosial-list__link sosial-list__link--dark animation-baсkground-color"
                   href=""
                   aria-label="ссылка на LinkedIn"
                 >
-                  <svg class="footer-sosial-icon" width="20" height="20">
+                  <svg class="sosial-list__icon" width="20" height="20">
                     <use href="./img/symbol-defs2.svg#icon-linkedin"></use>
                   </svg>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-form-wrap">
-            <form class="footer-form" autocomplete="off">
-              <div class="footer-form-field">
-                <b class="footer-form-appeal">Подпишитесь на рассылку</b>
-                <div class="footer-form-enter">
+          <div class="form-wrap">
+            <form class="form-wrap__form" autocomplete="off">
+              <div class="form-wrap__field">
+                <b class="form-wrap__appeal">Подпишитесь на рассылку</b>
+                <div class="form-wrap__enter">
                   <input
-                    class="footer-form-input"
+                    class="form-wrap__input"
                     type="text"
                     name="name"
                     id="name"
                     placeholder=" "
                   />
-                  <label for="name" class="footer-form-label" lang="en">
+                  <label for="name" class="form-wrap__label" lang="en">
                     E-mail
                   </label>
                   <button
                     type="submit"
-                    class="footer-primary-button animation-baсkground-color"
+                    class="primary-button form-wrap__primary-button animation-baсkground-color"
                   >
                     Подписаться
-                    <svg
-                      class="footer-primary-button-send"
-                      width="24"
-                      height="24"
-                    >
+                    <svg class="primary-button__send" width="24" height="24">
                       <use href="./img/symbol-defs2.svg#icon-icon-send"></use>
                     </svg>
                   </button>
